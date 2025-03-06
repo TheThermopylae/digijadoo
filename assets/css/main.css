@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Rubik-Medium';
+  src: url('../../public/font/Rubik-Medium.ttf') format('truetype');
+}
+
+img,
+video {
+  max-width: none !important;
+}
+
+* {
+  font-family: 'Rubik-Medium';
+  scrollbar-width: thin;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+select {
+  @apply outline-none cursor-pointer border bg-white
+}
+
+input {
+  @apply border outline-none rounded-lg bg-white;
+}
+
+.cinput {
+  @apply w-full block p-2 focus:ring-2 ring-blue-500 transition-all bg-purple-500;
+}
+
+.set-ring {
+  @apply focus:ring-2 ring-blue-800 transition-all;
+}
+
+.img-full {
+  @apply w-full;
+}
+
+.title {
+  @apply text-xl relative before:content-[''] before:absolute before:w-[5px] before:h-full before:bg-blue-600 before:top-0 before:right-0 pr-4 before:rounded-full;
+}
+
+.bg-primary {
+  @apply bg-[#8c00b6];
+}
+
+.text-primary {
+  @apply text-[#8c00b6];
+}
+
+.btn {
+  @apply outline-none border-none font-normal;
+}
+
+.btn-primary {
+  @apply bg-[#8c00b6] text-white hover:opacity-90;
+}
+
+.req-inp {
+  @apply after:content-['*'] after:text-red-500;
+}
+
+.btn-c {
+  @apply bg-blue-400 text-white hover:opacity-90 hover:text-white rounded-lg transition-all p-3;
+}
+
+.hover-ring {
+  @apply hover:ring-2 ring-blue-800 transition-all;
+}
+
+.swiper-pagination-bullet {
+  background: #a855f7 !important;
+}
