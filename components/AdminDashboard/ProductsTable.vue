@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="overflow-x-auto bg-blue-500 py-2 px-4 rounded-lg shadow"
+      class="overflow-x-auto bg-white py-2 px-4 rounded-lg shadow"
       v-if="products && products.length > 0"
     >
       <table class="table">

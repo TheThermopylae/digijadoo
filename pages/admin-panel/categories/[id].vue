@@ -28,7 +28,7 @@
         <label for="category-des">توضیح دسته بندی</label>
         <textarea
           id="category-des"
-          class="w-full mt-3 set-ring rounded-lg outline-none p-2 border bg-purple-500"
+          class="w-full mt-3 set-ring rounded-lg outline-none p-2 border bg-white"
           rows="5"
           v-model="categoryData.description"
         ></textarea>

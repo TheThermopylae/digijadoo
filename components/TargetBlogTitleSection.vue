@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-blue-500 text-white flex justify-center items-center flex-col rounded-lg p-14 mb-6"
+    class="bg-purple-c text-white flex justify-center items-center flex-col rounded-lg p-14 mb-6"
   >
     <h1 class="text-2xl">بلاگ دیجی جادو</h1>
     <div class="breadcrumbs text-sm">

@@ -10,7 +10,7 @@
         <h3>پر فروش ترین ها</h3>
       </template>
       <template #link>
-        <NuxtLink class="hover:text-blue-500" :to="{ path: '/products' }"
+        <NuxtLink class="hover:text-purple-c" :to="{ path: '/products' }"
           >بیشتر...</NuxtLink
         >
       </template>
@@ -21,7 +21,7 @@
       </template>
       <template #link>
         <NuxtLink
-          class="hover:text-blue-500"
+          class="hover:text-purple-c"
           :to="{ path: '/products', query: { sort: 'newest' } }"
           >بیشتر...</NuxtLink
         >

@@ -40,7 +40,7 @@
               v-if="categories"
               id="add-product-category"
               v-model="productData.categoryid"
-              class="w-full rounded-lg set-ring p-2 mt-2 border bg-purple-500"
+              class="w-full rounded-lg set-ring p-2 mt-2 border bg-white"
             >
               <option
                 v-for="item in categories.categories"
@@ -56,7 +56,7 @@
           <label for="product-shortdes">توضیح کوتاه</label>
           <textarea
             id="product-shortdes"
-            class="w-full my-2 set-ring rounded-lg outline-none p-2 border bg-purple-500"
+            class="w-full my-2 set-ring rounded-lg outline-none p-2 border bg-white"
             rows="5"
             v-model="productData.Shortdescription"
           ></textarea>

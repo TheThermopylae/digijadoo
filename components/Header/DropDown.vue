@@ -4,7 +4,7 @@
       v-if="!userData.avatar"
       tabindex="0"
       role="button"
-      class="w-12 h-12 bg-blue-500 rounded-full flex justify-center items-center hover-ring"
+      class="w-12 h-12 bg-white rounded-full flex justify-center items-center hover-ring"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -24,13 +24,13 @@
       tabindex="0"
       role="button"
       :src="$config.public.API_BASE_URL + userData.avatar"
-      class="w-12 h-12 rounded-full hover:ring-2 ring-blue-800 transition-all cursor-pointer"
+      class="w-12 h-12 rounded-full hover:ring-2 ring-purple-c transition-all cursor-pointer"
       alt="avatar"
     />
     <ul
       v-if="userData && userData.role == 'ADMIN'"
       tabindex="0"
-      class="dropdown-content bg-blue-500 rounded-box z-10 w-64 p-2 shadow-lg mt-3"
+      class="dropdown-content bg-white rounded-box z-10 w-64 p-2 shadow-lg mt-3"
     >
       <li class="flex items-center gap-3 mb-3 border-b pb-3">
         <div
@@ -63,7 +63,7 @@
       </li>
       <li class="mb-1">
         <NuxtLink
-          class="hover:bg-blue-600 transition-all block p-2 rounded-lg"
+          class="hover:bg-purple-c hover:text-white transition-all block p-2 rounded-lg"
           to="/admin-panel/orders"
         >
           <svg
@@ -83,7 +83,7 @@
       </li>
       <li class="mb-1">
         <NuxtLink
-          class="hover:bg-blue-600 transition-all block p-2 rounded-lg"
+          class="hover:bg-purple-c hover:text-white transition-all block p-2 rounded-lg"
           to="/admin-panel/categories/"
         >
           <svg
@@ -100,7 +100,7 @@
       </li>
       <li class="mb-1">
         <NuxtLink
-          class="hover:bg-blue-600 transition-all block p-2 rounded-lg"
+          class="hover:bg-purple-c hover:text-white transition-all block p-2 rounded-lg"
           to="/admin-panel/products"
         >
           <svg
@@ -123,7 +123,7 @@
       </li>
       <!-- <li class="mb-1">
         <NuxtLink
-          class="hover:bg-blue-600 transition-all block p-2 rounded-lg"
+          class="hover:bg-purple-c hover:text-white transition-all block p-2 rounded-lg"
           to="/admin-panel/blog"
         >
           <svg
@@ -146,7 +146,7 @@
       </li> -->
       <li class="mb-1">
         <NuxtLink
-          class="hover:bg-blue-600 transition-all block p-2 rounded-lg"
+          class="hover:bg-purple-c hover:text-white transition-all block p-2 rounded-lg"
           to="/user-panel/profile"
         >
           <svg
@@ -192,12 +192,12 @@
     <ul
       v-else
       tabindex="0"
-      class="dropdown-content bg-blue-500 rounded-box z-10 w-64 p-2 shadow-lg mt-3"
+      class="dropdown-content bg-white rounded-box z-10 w-64 p-2 shadow-lg mt-3"
     >
       <li class="flex items-center gap-3 mb-3 border-b pb-3">
         <div
           v-if="!userData.avatar"
-          class="w-16 h-16 bg-blue-500 flex justify-center items-center rounded-full"
+          class="w-16 h-16 bg-white flex justify-center items-center rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +225,7 @@
       </li>
       <li class="mb-1">
         <NuxtLink
-          class="hover:bg-blue-600 transition-all block p-2 rounded-lg"
+          class="hover:bg-purple-c hover:text-white transition-all block p-2 rounded-lg"
           to="/user-panel/orders"
         >
           <svg
@@ -243,7 +243,7 @@
       </li>
       <li class="mb-1">
         <NuxtLink
-          class="hover:bg-blue-600 transition-all block p-2 rounded-lg"
+          class="hover:bg-purple-c hover:text-white transition-all block p-2 rounded-lg"
           to="/user-panel/addresses"
         >
           <svg
@@ -265,7 +265,7 @@
       </li>
       <li class="mb-1">
         <NuxtLink
-          class="hover:bg-blue-600 transition-all block p-2 rounded-lg"
+          class="hover:bg-purple-c hover:text-white transition-all block p-2 rounded-lg"
           to="/user-panel/profile"
         >
           <svg

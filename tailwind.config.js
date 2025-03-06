@@ -19,7 +19,7 @@ export default {
         }
       },
       colors: {
-        'white-c': '#F6F6F6',
+        'white-c': '#F0F0F0',
         'purple-c': '#8c00b6',
       }
     }

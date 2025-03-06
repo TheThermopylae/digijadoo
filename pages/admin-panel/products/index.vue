@@ -8,7 +8,7 @@
             type="text"
             id="search-product"
             placeholder="جست و جوی محصول بر اساس عنوان"
-            class="p-3 w-full lg:w-80 set-ring my-5 lg:m-0 bg-purple-500 placeholder:text-white"
+            class="p-3 w-full lg:w-80 set-ring my-5 lg:m-0 bg-white"
             v-model="searchValue"
             @keyup.{keyAlias}.enter="searchingProducts"
           />

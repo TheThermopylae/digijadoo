@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2
-      class="mb-3 text-xl relative before:content-[''] before:absolute before:w-[5px] before:h-full before:bg-blue-600 before:top-0 before:right-0 pr-4 before:rounded-full"
+      class="mb-3 text-xl relative before:content-[''] before:absolute before:w-[5px] before:h-full before:bg-purple-c before:top-0 before:right-0 pr-4 before:rounded-full"
     >
       <slot> </slot>
     </h2>

@@ -31,11 +31,11 @@ input {
 }
 
 .cinput {
-  @apply w-full block p-2 focus:ring-2 ring-blue-500 transition-all bg-purple-500;
+  @apply w-full block p-2 focus:ring-2 ring-purple-c transition-all bg-white;
 }
 
 .set-ring {
-  @apply focus:ring-2 ring-blue-800 transition-all;
+  @apply focus:ring-2 ring-purple-c transition-all;
 }
 
 .img-full {
@@ -43,7 +43,7 @@ input {
 }
 
 .title {
-  @apply text-xl relative before:content-[''] before:absolute before:w-[5px] before:h-full before:bg-blue-600 before:top-0 before:right-0 pr-4 before:rounded-full;
+  @apply text-xl relative before:content-[''] before:absolute before:w-[5px] before:h-full before:bg-purple-c before:top-0 before:right-0 pr-4 before:rounded-full;
 }
 
 .bg-primary {
@@ -67,11 +67,11 @@ input {
 }
 
 .btn-c {
-  @apply bg-blue-400 text-white hover:opacity-90 hover:text-white rounded-lg transition-all p-3;
+  @apply bg-purple-c text-white hover:opacity-90 hover:text-white rounded-lg transition-all p-3;
 }
 
 .hover-ring {
-  @apply hover:ring-2 ring-blue-800 transition-all;
+  @apply hover:ring-2 ring-purple-c transition-all;
 }
 
 .swiper-pagination-bullet {

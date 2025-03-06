@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-blue-500 shadow p-2 rounded-xl relative flex flex-col justify-between h-[380px] md:h-[420px] xl:h-[480px]"
+    class="bg-white shadow p-2 rounded-xl relative flex flex-col justify-between h-[380px] md:h-[420px] xl:h-[480px]"
     v-if="props.data"
   >
     <div>
@@ -17,13 +17,13 @@
     </div>
     <div class="text-[15px] lg:text-[17px]">
       <div class="flex justify-between items-end">
-        <span class="text-black block"
+        <span class="text-purple-c block"
           >{{ props.data.price.toLocaleString() }} تومان</span
         >
       </div>
       <NuxtLink
         :to="`/products/${props.data.title}`"
-        class="transition-all text-white p-2 rounded-lg block mt-2 text-center bg-blue-400 hover:opacity-90 text-sm"
+        class="transition-all text-white p-2 rounded-lg block mt-2 text-center bg-purple-c hover:opacity-90 text-sm"
         >مشاهده جزییات</NuxtLink
       >
     </div>

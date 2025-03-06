@@ -1,6 +1,6 @@
 <template>
   <div
-    class="overflow-x-auto bg-blue-500 mt-5 rounded-lg shadow p-5"
+    class="overflow-x-auto bg-white mt-5 rounded-lg shadow p-5"
   >
     <table class="table">
       <!-- head -->

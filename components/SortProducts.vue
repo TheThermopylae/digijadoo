@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-500 shadow rounded-xl px-5 py-4 hidden lg:block sticky top-5">
+  <div class="bg-white shadow rounded-xl px-5 py-4 hidden lg:block sticky top-5">
     <h2 class="text-center text-xl mb-3">مرتب سازی بر اساس</h2>
     <div class="flex items-center gap-3 mb-3">
       <input

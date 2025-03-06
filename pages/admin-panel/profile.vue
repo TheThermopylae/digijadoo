@@ -70,7 +70,7 @@
           type="file"
           id="avatar"
           @change="handleImageUpload"
-          class="file-input file-input-ghost w-full border border-purple-c bg-purple-500 dark:bg-dark-s"
+          class="file-input file-input-ghost w-full border border-purple-c bg-white"
         />
       </div>
       <button class="btn-c w-full mt-5 h-12" v-if="!loading">

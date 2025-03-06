@@ -9,7 +9,7 @@
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
       <div
-        class="navbar bg-blue-500 m-auto lg:rounded-xl transition-all shadow py-0"
+        class="navbar bg-white m-auto lg:rounded-xl transition-all shadow py-0"
       >
         <div class="flex-none lg:hidden">
           <label
@@ -42,7 +42,7 @@
             <NuxtLink to="/user-cart">
               <div
                 v-if="userData"
-                class="w-12 h-12 bg-blue-400 mx-3 flex items-center justify-center rounded-full hover:ring-2 ring-blue-800 transition-all"
+                class="w-12 h-12 bg-white-c mx-3 flex items-center justify-center rounded-full hover:ring-2 ring-purple-c transition-all"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@
             <NuxtLink
               v-else
               to="/auth/login"
-              class="w-12 h-12 bg-white-c rounded-full flex justify-center items-center hover:ring-2 ring-blue-800 transition-all mr-3"
+              class="w-12 h-12 bg-white-c rounded-full flex justify-center items-center hover:ring-2 ring-purple-c transition-all mr-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,19 +81,19 @@
                 <div
                   tabindex="0"
                   role="button"
-                  class="hover:text-blue-800 transition-all"
+                  class="hover:text-purple-c transition-all"
                 >
                   دسته بندی ها
                 </div>
                 <ul
                   v-if="categories"
                   tabindex="0"
-                  class="dropdown-content bg-blue-500 rounded-box z-[1] w-52 max-h-[330px] overflow-auto p-2 shadow flex flex-col justify-between"
+                  class="dropdown-content bg-white rounded-box z-[1] w-52 max-h-[330px] overflow-auto p-2 shadow flex flex-col justify-between"
                 >
                   <li
                     v-for="item in categories"
                     :key="item._id"
-                    class="hover:bg-blue-600 p-2 rounded-lg hover:text-white transition-all"
+                    class="hover:bg-purple-c p-2 rounded-lg hover:text-white transition-all"
                   >
                     <!-- Category Links -->
                     <NuxtLink
@@ -111,33 +111,33 @@
             </li>
             <li>
               <nuxtLink
-                active-class="text-blue-800"
+                active-class="text-purple-c"
                 :to="{ path: '/products' }"
-                class="hover:text-blue-800 px-3 py-2 rounded-lg transition-all"
+                class="hover:text-purple-c px-3 py-2 rounded-lg transition-all"
                 >فروشگاه</nuxtLink
               >
             </li>
             <li>
               <nuxtLink
-                active-class="text-blue-800"
+                active-class="text-purple-c"
                 :to="{ path: '/blogs' }"
-                class="hover:text-blue-800 px-3 py-2 rounded-lg transition-all"
+                class="hover:text-purple-c px-3 py-2 rounded-lg transition-all"
                 >بلاگ</nuxtLink
               >
             </li>
             <li>
               <nuxtLink
-                active-class="text-blue-800"
+                active-class="text-purple-c"
                 to="/contact-me"
-                class="hover:text-blue-800 px-3 py-2 rounded-lg transition-all"
+                class="hover:text-purple-c px-3 py-2 rounded-lg transition-all"
                 >ارتباط با ما</nuxtLink
               >
             </li>
             <li>
               <nuxtLink
-                active-class="text-blue-800"
+                active-class="text-purple-c"
                 to="/about-me"
-                class="hover:text-blue-800 px-3 py-2 rounded-lg transition-all"
+                class="hover:text-purple-c px-3 py-2 rounded-lg transition-all"
                 >درباره ما</nuxtLink
               >
             </li>
@@ -150,7 +150,7 @@
               @keyup.enter="searchHandler"
               v-model="searchValue"
               type="text"
-              class="set-ring h-12 p-3 xl:w-72 bg-blue-600 placeholder:text-white"
+              class="set-ring h-12 p-3 xl:w-72 bg-white"
               placeholder="دنبال چی میگردی؟"
             />
             <svg
@@ -170,7 +170,7 @@
           <NuxtLink to="/user-cart">
             <div
               v-if="userData"
-              class="w-12 h-12 bg-blue-600 mx-3 flex items-center justify-center rounded-full hover:ring-2 ring-blue-800 transition-all"
+              class="w-12 h-12 bg-white-c mx-3 flex items-center justify-center rounded-full hover:ring-2 ring-purple-c transition-all"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +188,7 @@
           <NuxtLink
             v-else
             to="/auth/login"
-            class="w-12 h-12 bg-white-c rounded-full flex justify-center items-center hover:ring-2 ring-blue-800 transition-all mr-3"
+            class="w-12 h-12 bg-white-c rounded-full flex justify-center items-center hover:ring-2 ring-purple-c transition-all mr-3"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -211,7 +211,7 @@
         aria-label="close sidebar"
         class="drawer-overlay"
       ></label>
-      <ul class="bg-blue-500 min-h-full w-80 p-5 z-10">
+      <ul class="bg-white min-h-full w-80 p-5 z-10">
         <li class="mb-3">
           <svg
             @click="closeDrawer"
@@ -233,7 +233,7 @@
               type="text"
               id="search-product"
               v-model="searchValue"
-              class="w-full p-2 set-ring bg-blue-600 placeholder:text-white"
+              class="w-full p-2 set-ring bg-white"
               placeholder="دنبال چی میگردی؟"
               @keyup.enter="searchHandler"
             />
@@ -257,7 +257,7 @@
         <li>
           <!-- <div tabindex="0" class="accordion">
             <div class="collapse-title font-medium pb-0">دسته بندی ها</div>
-            <div class="collapse-content bg-blue-600 rounded-xl mb-2">
+            <div class="collapse-content bg-white rounded-xl mb-2">
               <ul class="pt-3 leading-8" v-if="categories">
                 <li v-for="item in categories" :key="item._id">
                   <NuxtLink

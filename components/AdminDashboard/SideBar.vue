@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hidden lg:block w-1/4 xl:w-1/5 fixed h-full top-0 right-0 bg-blue-500 text-white"
+    class="hidden lg:block w-1/4 xl:w-1/5 fixed h-full top-0 right-0 bg-white"
   >
     <div class="flex justify-between items-center text-2xl pl-4">
       <NuxtLink to="/">
@@ -24,7 +24,7 @@
       <li class="mb-2 border-gray-300">
         <NuxtLink
           to="/admin-panel/orders"
-          class="block p-2 rounded-lg transition-all hover:bg-blue-600 hover:text-white"
+          class="block p-2 rounded-lg transition-all hover:bg-purple-c hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@
       <li class="mb-2">
         <NuxtLink
           to="/admin-panel/users"
-          class="block p-2 rounded-lg transition-all hover:bg-blue-600 hover:text-white"
+          class="block p-2 rounded-lg transition-all hover:bg-purple-c hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@
       <li class="mb-2 border-gray-300">
         <NuxtLink
           to="/admin-panel/categories/"
-          class="block p-2 rounded-lg transition-all hover:bg-blue-600 hover:text-white"
+          class="block p-2 rounded-lg transition-all hover:bg-purple-c hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@
       <li class="mb-2">
         <NuxtLink
           to="/admin-panel/products/"
-          class="block p-2 rounded-lg transition-all hover:bg-blue-600 hover:text-white"
+          class="block p-2 rounded-lg transition-all hover:bg-purple-c hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@
       <li class="pb-2 border-gray-300">
         <NuxtLink
           to="/admin-panel/blog"
-          class="block p-2 rounded-lg transition-all hover:bg-blue-600 hover:text-white"
+          class="block p-2 rounded-lg transition-all hover:bg-purple-c hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@
       <li class="pb-2 border-gray-300">
         <NuxtLink
           to="/admin-panel/profile"
-          class="block p-2 rounded-lg transition-all hover:bg-blue-600 hover:text-white"
+          class="block p-2 rounded-lg transition-all hover:bg-purple-c hover:text-white"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +157,7 @@ ul li svg {
   margin-left: 5px;
 }
 ul li .router-link-active {
-  background: #2563EB;
+  background: #8c00b6;
   color: #fff;
 }
 </style>
