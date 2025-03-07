@@ -1,5 +1,5 @@
 <template>
-  <tr class="last:border-0">
+  <tr class="last:border-0 dark:border-b-dark">
     <td class="flex items-center p-0">
       <div class="md:flex items-center">
         <img
@@ -14,7 +14,7 @@
     <td>{{ props.product.price.toLocaleString() }} تومان</td>
     <td>
       <div
-        class="w-8 h-8 rounded-full m-auto border border-gray-300"
+        class="w-8 h-8 rounded-full m-auto border border-gray-300 dark:border-b-dark"
         :style="{ backgroundColor: props.product.color }"
       ></div>
     </td>
@@ -26,7 +26,7 @@
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="size-6 cursor-pointer text-left absolute left-0 hover:bg-gray-100 transition-all rounded-full"
+        class="size-6 cursor-pointer text-left absolute left-0 hover:bg-gray-100 dark:hover:bg-dark-c transition-all rounded-full"
         @click="showMenu = true"
       >
         <path
@@ -38,7 +38,7 @@
       <Transition>
         <div
           v-if="showMenu"
-          class="w-52 bg-gray-200 dark:bg-dark absolute left-1/2 bottom-0 p-2 rounded-lg z-10"
+          class="w-52 bg-gray-200 dark:bg-dark-c absolute left-1/2 bottom-0 p-2 rounded-lg z-10"
         >
           <nuxtLink
             :to="`/admin-panel/products/${props.product._id}`"

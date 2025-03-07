@@ -1,11 +1,11 @@
 <template>
   <div
-    class="overflow-x-auto bg-white mt-5 rounded-lg shadow p-5"
+    class="overflow-x-auto bg-white dark:bg-dark-s mt-5 rounded-lg shadow p-5"
   >
     <table class="table">
       <!-- head -->
       <thead>
-        <tr>
+        <tr class="dark:text-gray-300">
           <th>آیدی</th>
           <th>نام</th>
           <th>تاریخ عضویت</th>

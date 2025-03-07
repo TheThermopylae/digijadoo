@@ -97,7 +97,7 @@
     </div>
     <TiptapEditorContent
       :editor="editor"
-      class="prose max-w-none [&_ol]:list-decimal [&_ul]:list-disc [&_ol]:mr-3 [&_ol]:pr-3 [&_ul]:mr-3 [&_ul]:pr-3 ring-2 ring-purple-c bg-white p-5 mb-5 rounded-lg [&_h1]:text-3xl [&_h2]:text-2xl [&-h3]:text-xl"
+      class="prose max-w-none [&_ol]:list-decimal [&_ul]:list-disc [&_ol]:mr-3 [&_ol]:pr-3 [&_ul]:mr-3 [&_ul]:pr-3 ring-2 ring-purple-c bg-white dark:bg-dark-s p-5 mb-5 rounded-lg [&_h1]:text-3xl [&_h2]:text-2xl [&-h3]:text-xl"
     />
   </div>
 </template>

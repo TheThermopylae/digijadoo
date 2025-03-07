@@ -1,13 +1,13 @@
 <template>
   <div>
     <div
-      class="overflow-x-auto bg-white py-2 px-4 rounded-lg shadow"
+      class="overflow-x-auto bg-white dark:bg-dark-s py-2 px-4 rounded-lg shadow"
       v-if="products && products.length > 0"
     >
       <table class="table">
         <!-- head -->
         <thead>
-          <tr>
+          <tr class="dark:border-b-dark">
             <th class="p-0">
               <td class="mr-2">نام</td>
             </th>

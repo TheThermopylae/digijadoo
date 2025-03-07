@@ -18,12 +18,44 @@
 <script setup>
 let showLoading = ref(true)
 
-onMounted(() => {
-  showLoading.value = false
+let darkmode = ref(false)
+
+function setDarkMode () {
+  darkmode.value = true
+}
+
+function unSetDarkMode () {
+  darkmode.value = false
+}
+
+provide('darkmode', darkmode)
+provide('setDarkMode', setDarkMode)
+provide('unSetDarkMode', unSetDarkMode)
+
+function checkDarkModeOn () {
+  if (localStorage.getItem('darkmode') == true)
+    document.querySelector('html').classList.add('dark')
+  else document.querySelector('html').classList.remove('dark')
+
+  darkmode.value = JSON.parse(localStorage.getItem('darkmode'))
+}
+
+watch(darkmode, () => {
+  if (darkmode.value) {
+    document.querySelector('html').classList.add('dark')
+    localStorage.setItem('darkmode', true)
+  } else {
+    document.querySelector('html').classList.remove('dark')
+    localStorage.setItem('darkmode', false)
+  }
 })
 
 useHead({
   titleTemplate: '%s | Digi Jadoo'
+})
+onMounted(() => {
+  showLoading.value = false
+  checkDarkModeOn()
 })
 </script>
 

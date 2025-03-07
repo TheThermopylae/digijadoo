@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-white-c">
+  <div class="flex flex-col min-h-screen bg-white-c dark:bg-[#171717] dark:text-text-dark transition-all">
     <HeaderTheHeader :categories="categories"></HeaderTheHeader>
     <div
       class="flex-grow container m-auto py-5 lg:pt-5"

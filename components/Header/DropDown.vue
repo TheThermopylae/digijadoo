@@ -4,7 +4,7 @@
       v-if="!userData.avatar"
       tabindex="0"
       role="button"
-      class="w-12 h-12 bg-white rounded-full flex justify-center items-center hover-ring"
+      class="w-12 h-12 bg-white-c dark:bg-dark-c rounded-full flex justify-center items-center hover-ring"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -30,12 +30,12 @@
     <ul
       v-if="userData && userData.role == 'ADMIN'"
       tabindex="0"
-      class="dropdown-content bg-white rounded-box z-10 w-64 p-2 shadow-lg mt-3"
+      class="dropdown-content bg-white dark:bg-dark-s rounded-box z-10 w-64 p-2 shadow-lg mt-3"
     >
       <li class="flex items-center gap-3 mb-3 border-b pb-3">
         <div
           v-if="!userData.avatar"
-          class="w-16 h-16 bg-white-c flex justify-center items-center rounded-full"
+          class="w-16 h-16 bg-white-c dark:bg-dark-c flex justify-center items-center rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -121,29 +121,6 @@
           محصولات</NuxtLink
         >
       </li>
-      <!-- <li class="mb-1">
-        <NuxtLink
-          class="hover:bg-purple-c hover:text-white transition-all block p-2 rounded-lg"
-          to="/admin-panel/blog"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="size-5 inline-block ml-1"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.125 3C3.089 3 2.25 3.84 2.25 4.875V18a3 3 0 0 0 3 3h15a3 3 0 0 1-3-3V4.875C17.25 3.839 16.41 3 15.375 3H4.125ZM12 9.75a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5H12Zm-.75-2.25a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5H12a.75.75 0 0 1-.75-.75ZM6 12.75a.75.75 0 0 0 0 1.5h7.5a.75.75 0 0 0 0-1.5H6Zm-.75 3.75a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75ZM6 6.75a.75.75 0 0 0-.75.75v3c0 .414.336.75.75.75h3a.75.75 0 0 0 .75-.75v-3A.75.75 0 0 0 9 6.75H6Z"
-              clip-rule="evenodd"
-            />
-            <path
-              d="M18.75 6.75h1.875c.621 0 1.125.504 1.125 1.125V18a1.5 1.5 0 0 1-3 0V6.75Z"
-            />
-          </svg>
-          وبلاگ</NuxtLink
-        >
-      </li> -->
       <li class="mb-1">
         <NuxtLink
           class="hover:bg-purple-c hover:text-white transition-all block p-2 rounded-lg"
@@ -192,12 +169,12 @@
     <ul
       v-else
       tabindex="0"
-      class="dropdown-content bg-white rounded-box z-10 w-64 p-2 shadow-lg mt-3"
+      class="dropdown-content bg-white dark:bg-dark-s rounded-box z-10 w-64 p-2 shadow-lg mt-3"
     >
       <li class="flex items-center gap-3 mb-3 border-b pb-3">
         <div
           v-if="!userData.avatar"
-          class="w-16 h-16 bg-white flex justify-center items-center rounded-full"
+          class="w-16 h-16 bg-white-c dark:bg-dark-c flex justify-center items-center rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between p-3 rounded-lg bg-white">
+  <div class="flex justify-between p-3 rounded-lg bg-white dark:bg-dark-s">
     <h4>{{ props.address.title }}</h4>
     <div class="flex items-center gap-3">
       <div class="lg:tooltip" data-tip="انتخاب به عنوان آدرس پیشفرض">

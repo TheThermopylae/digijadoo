@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="fixed top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 w-11/12 bg-white z-10 md:w-2/3 lg:w-2/5 p-3 rounded-lg"
+      class="fixed top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 w-11/12 bg-white dark:bg-dark-s z-10 md:w-2/3 lg:w-2/5 p-3 rounded-lg"
     >
       <div class="flex justify-between items-center">
         <svg

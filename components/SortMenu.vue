@@ -1,9 +1,9 @@
 <template>
   <div class="dropdown dropdown-end">
-    <div tabindex="0" role="button" class="btn m-1 bg-white">مرتب سازی</div>
+    <div tabindex="0" role="button" class="btn m-1 bg-white dark:bg-dark-s">مرتب سازی</div>
     <ul
       tabindex="0"
-      class="dropdown-content bg-white   rounded-box z-10 w-52 p-2 shadow"
+      class="dropdown-content bg-white dark:bg-dark-s rounded-box z-10 w-52 p-2 shadow"
     >
       <li class="px-2 py-1 active:bg-purple-c active:text-white transition-all rounded-lg">
         <a @click="emitSort('newest')">جدیدترین</a>

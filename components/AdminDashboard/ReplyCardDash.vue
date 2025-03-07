@@ -1,11 +1,11 @@
 <template>
   <div
-    class="p-2 bg-white rounded-lg shadow flex flex-col justify-between mb-2"
+    class="p-2 bg-white dark:bg-dark-s rounded-lg shadow flex flex-col justify-between mb-2"
   >
     <strong>مدیر</strong>
     <div>
       <p class="my-2">{{ props.reply.text }}</p>
-      <p class="mb-2 text-gray-600">ریپلای شده بر روی : {{ props.comment.text }}</p>
+      <p class="mb-2 text-gray-600 dark:text-gray-400">ریپلای شده بر روی : {{ props.comment.text }}</p>
       <button class="btn-c h-12" @click="approvReply" v-if="!loading">
         تایید ریپلای
       </button>

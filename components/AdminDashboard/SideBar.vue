@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hidden lg:block w-1/4 xl:w-1/5 fixed h-full top-0 right-0 bg-white"
+    class="hidden lg:block w-1/4 xl:w-1/5 fixed h-full top-0 right-0 bg-white dark:bg-dark-s dark:text-text-dark"
   >
     <div class="flex justify-between items-center text-2xl pl-4">
       <NuxtLink to="/">
@@ -8,7 +8,7 @@
       </NuxtLink>
       <h4>پنل مدیریت</h4>
     </div>
-    <ul class="text-base-content min-h-full w-full p-4 pt-1">
+    <ul class="min-h-full w-full p-4 pt-1">
       <li class="mb-3 flex items-center gap-5 border-b border-gray-300 pb-3">
         <img
           :src="

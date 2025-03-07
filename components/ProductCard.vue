@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white shadow p-2 rounded-xl relative flex flex-col justify-between h-[380px] md:h-[420px] xl:h-[480px]"
+    class="bg-white dark:bg-dark-s shadow p-2 rounded-xl relative flex flex-col justify-between h-[380px] md:h-[420px] xl:h-[480px]"
     v-if="props.data"
   >
     <div>

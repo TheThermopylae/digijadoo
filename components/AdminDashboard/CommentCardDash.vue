@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-2 bg-white rounded-lg shadow flex flex-col justify-between"
+    class="p-2 bg-white dark:bg-dark-s rounded-lg shadow flex flex-col justify-between"
     v-if="!props.comment.approved"
   >
     <strong>{{ props.comment.userid }}</strong>

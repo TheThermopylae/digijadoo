@@ -1,14 +1,14 @@
 <template>
-  <div class="md:w-1/3 bg-white p-3 shadow rounded-xl mt-2 md:mt-0">
+  <div class="md:w-1/3 bg-white dark:bg-dark-s p-3 shadow rounded-xl mt-2 md:mt-0">
     <h2 class="text-xl mb-5">جمع کل سبد خرید</h2>
     <div class="my-2">
       <div class="flex justify-between items-center border-b pb-3 mb-2">
         <h4>قیمت کالا :</h4>
-        <span class="text-gray-600">{{ price.toLocaleString() }} تومان</span>
+        <span class="text-gray-600 dark:text-gray-300">{{ price.toLocaleString() }} تومان</span>
       </div>
       <div class="flex justify-between items-center border-b pb-3 mb-2">
         <h4>هزینه ارسال :</h4>
-        <span class="text-gray-600">50,000 تومان</span>
+        <span class="text-gray-600 dark:text-gray-300">50,000 تومان</span>
       </div>
       <div class="flex justify-between items-center">
         <h4>هزینه کل :</h4>

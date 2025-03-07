@@ -1,6 +1,6 @@
 <template>
   <div
-    class="lg:grid lg:grid-cols-3 gap-5 bg-white rounded-xl px10 p-5 shadow"
+    class="lg:grid lg:grid-cols-3 gap-5 bg-white dark:bg-dark-s rounded-xl px10 p-5 shadow"
   >
     <div class="breadcrumbs text-sm mb-5 lg:hidden">
       <ul>
@@ -45,7 +45,7 @@
       </ClientOnly>
     </div>
     <div class="place-content-center">
-      <div class="mt-5 lg:m-0 bg-white-c p-3 rounded-lg">
+      <div class="mt-5 lg:m-0 bg-white-c dark:bg-dark-c p-3 rounded-lg">
         <div>
           <h4 class="inline-block ml-1 text-xl">موجود در فروشگاه</h4>
           <h4 class="my-2">

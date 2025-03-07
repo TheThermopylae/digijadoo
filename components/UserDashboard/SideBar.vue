@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hidden lg:block w-1/4 xl:w-1/5 fixed h-full top-0 right-0 bg-white"
+    class="hidden lg:block w-1/4 xl:w-1/5 fixed h-full top-0 right-0 bg-white dark:bg-dark-s"
   >
     <div class="flex justify-between items-center text-2xl pl-4">
       <NuxtLink to="/">

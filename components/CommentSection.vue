@@ -6,16 +6,16 @@
     >
       <form
         @submit.prevent="addComment"
-        class="w-full md:w-1/2 bg-white p-3 rounded-lg shadow"
+        class="w-full md:w-1/2 bg-white dark:bg-dark-s p-3 rounded-lg shadow"
       >
-        <p class="mb-5 text-gray-700" v-if="approvedComments.length == 0">
+        <p class="mb-5 text-gray-700 dark:text-gray-400" v-if="approvedComments.length == 0">
           اولین نفری باشید که نظر میدهید!
         </p>
-        <p class="text-gray-600 mb-5">دیدگاه خود را بنویسید</p>
+        <p class="text-gray-600 dark:text-gray-300 mb-5">دیدگاه خود را بنویسید</p>
         <label for="comment-text" class="block mb-2 req-inp">دیدگاه شما</label>
         <textarea
           id="comment-text"
-          class="w-full border rounded-lg mb-2 outline-none set-ring p-2"
+          class="w-full border rounded-lg mb-2 outline-none set-ring p-2 dark:bg-dark-s dark:border-[#303030]"
           rows="5"
           v-model="commentText"
         ></textarea>
@@ -25,7 +25,7 @@
         </button>
       </form>
       <div
-        class="w-full md:w-1/2 bg-white shadow rounded-lg p-3"
+        class="w-full md:w-1/2 bg-white dark:bg-dark-s shadow rounded-lg p-3"
         v-if="approvedComments.length > 0"
       >
         <p class="mb-3">

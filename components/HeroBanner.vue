@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mb-5 banner w-full rounded-lg flex justify-center items-center h-[400px]"
+    class="mb-10 banner w-full rounded-lg flex justify-center items-center h-[400px]"
   >
     <p class="text-center text-xl md:text-3xl mb-5 text-white">
       دیجی جادو، فروشگاه محصولات

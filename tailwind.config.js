@@ -21,6 +21,10 @@ export default {
       colors: {
         'white-c': '#F0F0F0',
         'purple-c': '#8c00b6',
+        'dark-c': '#171717',
+        'dark-s': '#1E1E1E',
+        'text-dark': '#EEE',
+        'b-dark': '#303030'
       }
     }
   },

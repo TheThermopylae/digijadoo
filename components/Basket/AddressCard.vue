@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white shadow p-3 w-full rounded-lg text-lg last:mb-0 flex justify-between items-center"
+    class="bg-white dark:bg-dark-s shadow p-3 w-full rounded-lg text-lg last:mb-0 flex justify-between items-center"
   >
     {{ props.address.title }}
     <input

@@ -56,7 +56,7 @@
           <label for="product-shortdes">توضیح کوتاه</label>
           <textarea
             id="product-shortdes"
-            class="w-full my-2 set-ring rounded-lg outline-none p-2 border bg-white"
+            class="w-full my-2 set-ring rounded-lg outline-none p-2 border bg-white dark:bg-dark-s dark:border-b-dark" 
             rows="5"
             v-model="productData.Shortdescription"
           ></textarea>

@@ -36,7 +36,7 @@
       <p>
         {{ findAddress.province }} / {{ findAddress.city }} / خیابان
         {{ findAddress.street }} / کد پستی :
-        {{ findAddress.postalcode }}
+        {{ findAddress.postalCode }}
       </p>
     </td>
   </tr>

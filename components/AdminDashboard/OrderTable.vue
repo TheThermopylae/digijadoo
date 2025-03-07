@@ -1,9 +1,9 @@
 <template>
-  <div class="overflow-x-auto bg-white mt-5 rounded-lg shadow p-5">
+  <div class="overflow-x-auto bg-white dark:bg-dark-s mt-5 rounded-lg shadow p-5">
     <table class="table">
       <!-- head -->
       <thead>
-        <tr>
+        <tr class="dark:text-gray-400">
           <th>آیدی</th>
           <th>تاریخ</th>
           <th>ساعت</th>

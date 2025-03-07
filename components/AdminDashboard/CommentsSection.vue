@@ -18,7 +18,7 @@
       </div>
     </div>
   </div>
-  <p v-else class="text-center text-gray-600">نظری وجود ندارد</p>
+  <p v-else class="text-center text-gray-600 dark:text-gray-400">نظری وجود ندارد</p>
 </template>
 
 <script setup>

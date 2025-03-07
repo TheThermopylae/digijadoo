@@ -9,7 +9,7 @@
     <div class="drawer-content flex flex-col">
       <!-- Navbar -->
       <div
-        class="navbar bg-white m-auto lg:rounded-xl transition-all shadow py-0"
+        class="navbar bg-white dark:bg-dark-s m-auto lg:rounded-xl transition-all shadow py-0"
       >
         <div class="flex-none lg:hidden">
           <label
@@ -39,10 +39,44 @@
             <img src="../../public/logo.png" class="w-20 h-20" alt="" />
           </nuxtLink>
           <div class="flex items-center lg:hidden">
+            <div
+            @click="setDarkMode"
+            v-if="!darkmode"
+            class="w-12 h-12 bg-white-c dark:bg-dark-c mr-3 flex justify-center items-center hover:ring-2 ring-purple-c transition-all cursor-pointer rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            @click="unSetDarkMode"
+            v-else
+            class="w-12 h-12 bg-white-c dark:bg-dark-c mr-3 flex justify-center items-center hover:ring-2 ring-purple-c transition-all cursor-pointer rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+              />
+            </svg>
+          </div>
             <NuxtLink to="/user-cart">
               <div
                 v-if="userData"
-                class="w-12 h-12 bg-white-c mx-3 flex items-center justify-center rounded-full hover:ring-2 ring-purple-c transition-all"
+                class="w-12 h-12 bg-white-c dark:bg-dark-c mx-3 flex items-center justify-center rounded-full hover:ring-2 ring-purple-c transition-all"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +91,7 @@
               </div>
             </NuxtLink>
             <HeaderDropDown v-if="userData"></HeaderDropDown>
+
             <NuxtLink
               v-else
               to="/auth/login"
@@ -88,7 +123,7 @@
                 <ul
                   v-if="categories"
                   tabindex="0"
-                  class="dropdown-content bg-white rounded-box z-[1] w-52 max-h-[330px] overflow-auto p-2 shadow flex flex-col justify-between"
+                  class="dropdown-content bg-white dark:bg-dark-s rounded-box z-[1] w-52 max-h-[330px] overflow-auto p-2 shadow flex flex-col justify-between"
                 >
                   <li
                     v-for="item in categories"
@@ -167,10 +202,45 @@
               />
             </svg>
           </div>
+          <!-- dark light -->
+          <div
+            @click="setDarkMode"
+            v-if="!darkmode"
+            class="w-12 h-12 bg-white-c dark:bg-dark-c mr-3 flex justify-center items-center hover:ring-2 ring-purple-c transition-all cursor-pointer rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            @click="unSetDarkMode"
+            v-else
+            class="w-12 h-12 bg-white-c dark:bg-dark-c mr-3 flex justify-center items-center hover:ring-2 ring-purple-c transition-all cursor-pointer rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+              />
+            </svg>
+          </div>
           <NuxtLink to="/user-cart">
             <div
               v-if="userData"
-              class="w-12 h-12 bg-white-c mx-3 flex items-center justify-center rounded-full hover:ring-2 ring-purple-c transition-all"
+              class="w-12 h-12 bg-white-c dark:bg-dark-c mx-3 flex items-center justify-center rounded-full hover:ring-2 ring-purple-c transition-all"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +258,7 @@
           <NuxtLink
             v-else
             to="/auth/login"
-            class="w-12 h-12 bg-white-c rounded-full flex justify-center items-center hover:ring-2 ring-purple-c transition-all mr-3"
+            class="w-12 h-12 bg-white-c dark:bg-dark-c rounded-full flex justify-center items-center hover:ring-2 ring-purple-c transition-all mr-3"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -211,7 +281,7 @@
         aria-label="close sidebar"
         class="drawer-overlay"
       ></label>
-      <ul class="bg-white min-h-full w-80 p-5 z-10">
+      <ul class="bg-white-c dark:bg-dark-s min-h-full w-80 p-5 z-10">
         <li class="mb-3">
           <svg
             @click="closeDrawer"
@@ -255,29 +325,12 @@
           </div>
         </li>
         <li>
-          <!-- <div tabindex="0" class="accordion">
-            <div class="collapse-title font-medium pb-0">دسته بندی ها</div>
-            <div class="collapse-content bg-white rounded-xl mb-2">
-              <ul class="pt-3 leading-8" v-if="categories">
-                <li v-for="item in categories" :key="item._id">
-                  <NuxtLink
-                    class="block"
-                    :to="{
-                      path: '/products',
-                      query: { ...route.query, category: item._id }
-                    }"
-                    >{{ item.name }}</NuxtLink
-                  >
-                </li>
-              </ul>
-            </div>
-          </div> -->
           <ul
             class="menu bg-bse-200 rounded-box w-full mt-4 mb-2.5 text-[16px]"
           >
             <li>
               <details>
-                <summary class="p0">دسته بندی ها</summary>
+                <summary>دسته بندی ها</summary>
                 <ul>
                   <li v-for="item in categories" :key="item._id">
                     <NuxtLink
@@ -353,8 +406,9 @@ const closeDrawer = () => {
     drawerCheckbox.value.checked = false
   }
 }
-
-let config = useRuntimeConfig()
-
 let props = defineProps(['categories'])
+
+let darkmode = inject('darkmode')
+let setDarkMode = inject('setDarkMode')
+let unSetDarkMode = inject('unSetDarkMode')
 </script>

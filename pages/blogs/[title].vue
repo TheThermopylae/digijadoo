@@ -4,7 +4,7 @@
       :title="blog.title"
     ></LazyTargetBlogTitleSection>
     <h1 class="text-3xl">{{ blog.title }}</h1>
-    <p class="my-5 text-gray-600">{{ blog.dec }}</p>
+    <p class="my-5 text-gray-600 dark:text-gray-300">{{ blog.dec }}</p>
     <img
       :src="`${$config.public.API_BASE_URL}${blog.img}`"
       :alt="blog.alt"
@@ -12,7 +12,7 @@
     />
     <div
       v-html="blog.text"
-      class="mt-9 bg-white text-gray-600 p-4 rounded-lg shadow"
+      class="mt-9 bg-white dark:bg-dark-s text-gray-600 dark:text-gray-300 p-4 rounded-lg shadow"
     ></div>
   </div>
 </template>

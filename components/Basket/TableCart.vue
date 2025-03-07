@@ -1,7 +1,7 @@
 <template>
   <div class="md:w-2/3">
     <div
-      class="mt-4 bg-white shadow p-3 rounded-xl text-sm md:text-[16px]"
+      class="mt-4 bg-white dark:bg-dark-s shadow p-3 rounded-xl text-sm md:text-[16px]"
       v-if="props.products.length > 0"
     >
       <table class="w-full">

@@ -20,37 +20,14 @@
         افزودن دسته بندی
       </NuxtLink>
     </div>
-    <div
-      class="mt-5 border-b border-b-purple-c pb-4"
-      v-if="categories && categories.categories.length > 0"
-      v-for="item in categories.categories"
-      :key="item._id"
-    >
-      <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5"
-      >
-        <AdminDashboardCategoryCardDash
-          :category="item"
-          @showDeleteModal="showDeleteModalFunc(item)"
-        ></AdminDashboardCategoryCardDash>
-      </div>
-      <h4 v-if="item.subcategories.length > 0" class="my-4 text-xl">
-        زیر دسته بندی های {{ item.name }}
-      </h4>
-      <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5"
-      >
-        <AdminDashboardSubCategoryCardDash
-          class=""
-          v-for="subCat in item.subcategories"
-          :subcategory="subCat"
-          :categoryid="item._id"
-          :key="subCat._id"
-          @showDeleteSubCatModal="showDeleteSubCatFunc(item._id, subCat._id)"
-        ></AdminDashboardSubCategoryCardDash>
-      </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-5 mt-5" v-if="categories && categories.categories.length > 0">
+      <AdminDashboardCategoryCardDash
+        v-for="item in categories.categories"
+        :category="item"
+        @showDeleteModal="showDeleteModalFunc(item)"
+      ></AdminDashboardCategoryCardDash>
     </div>
-    <p v-else class="text-center text-gray-600">دسته بندی وجود ندارد</p>
+    <p v-else class="text-gray-600 dark:text-gray-400 text-center">دسته بندی وجود ندارد</p>
     <Transition>
       <AdminDashboardDeleteCategoryModal
         :category="targetCategory"

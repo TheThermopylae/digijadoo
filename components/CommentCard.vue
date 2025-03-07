@@ -21,13 +21,13 @@
     <div class="mt-2" v-if="replyMode">
       <textarea
         id="reply"
-        class="w-full bg-white border rounded-lg p-2 set-ring outline-none"
+        class="w-full dark:bg-dark-s dark:border-b-dark border rounded-lg p-2 set-ring outline-none"
         placeholder="متن ریپلای خود را وارد کنید..."
         v-model="replyText"
       ></textarea>
       <div class="mt-1">
         <button
-          class="bg-white-c p-3 rounded-lg ml-2 hover:bg-gray-200 transition-all"
+          class="bg-white-c dark:bg-dark-c p-3 rounded-lg ml-2 hover:bg-gray-200 dark:hover:opacity-80 transition-all"
           @click="replyMode = false"
         >
           لغو

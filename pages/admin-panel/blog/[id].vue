@@ -26,7 +26,8 @@
       <label for="blog-dec" class="mt-5 block">توضیحات کوتاه</label>
       <textarea
         id="blog-dec"
-        class="cinput rounded-lg outline-none border mt-2"
+        class="cinput rounded-lg outline-none border mt-2 dark:bg-dark-s dark:border-b-dark"
+        rows="5"
         v-model="blogData.dec"
       ></textarea>
       <div class="mt-4">
@@ -82,7 +83,7 @@
           accept="image/*"
           @change="handleImageUpload"
           type="file"
-          class="file-input file-input-ghost w-full max-w-xs mt-2 block border border-purple-500"
+          class="file-input file-input-ghost w-full max-w-xs mt-2 block border"
         />
       </div>
       <img

@@ -38,7 +38,7 @@
           </svg>
         </NuxtLink>
       </div>
-      <div class="lg:tooltip" data-tip="افزودن زیر دسته بندی">
+      <!-- <div class="lg:tooltip" data-tip="افزودن زیر دسته بندی">
         <NuxtLink :to="`/admin-panel/categories/subcategories/${props.category._id}`">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@
             />
           </svg>
         </NuxtLink>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

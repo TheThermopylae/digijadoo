@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="fixed top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 w-11/12 bg-white z-10 md:w-2/3 lg:w-2/5 p-3 rounded-lg"
+      class="fixed top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 w-11/12 bg-white dark:bg-dark-s z-10 md:w-2/3 lg:w-2/5 p-3 rounded-lg"
     >
       <div class="flex justify-between items-center">
         <svg
@@ -84,7 +84,7 @@
               type="text"
               id="postalcode-edit"
               class="cinput"
-              v-model="addressData.postalcode"
+              v-model="addressData.postalCode"
             />
           </div>
         </div>
@@ -110,7 +110,7 @@
     <Transition>
       <div
         v-if="loading || pending"
-        class="fixed right-0 top-0 bg-white w-full h-full flex justify-center items-center flex-col z-20"
+        class="fixed right-0 top-0 bg-white dark:bg-dark-c w-full h-full flex justify-center items-center flex-col z-20"
       >
         <LoadingSpinner class="w-20 h-20 text-primary"></LoadingSpinner>
         <p
@@ -146,7 +146,7 @@ let addressData = reactive({
   street: props.address.street,
   province: '',
   city: '',
-  postalcode: props.address.postalcode
+  postalCode: props.address.postalCode
 })
 
 let cities = ref('')
@@ -183,7 +183,7 @@ async function editAddress () {
     !addressData.street ||
     !addressData.city ||
     !addressData.province ||
-    !addressData.postalcode
+    !addressData.postalCode
   )
     toast.error('تمامی فیلد هارا پر کنید')
   else {

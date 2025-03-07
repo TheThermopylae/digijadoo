@@ -1,33 +1,33 @@
 <template>
   <div>
-    <div class="bg-white p-3 rounded-xl shadow mb-5 md:text-center">
+    <div class="bg-white dark:bg-dark-s p-3 rounded-xl shadow mb-5 md:text-center">
       <UserDashboardOrderCardStatus :order="props.order.status"></UserDashboardOrderCardStatus>
       <div class="flex gap-5 flex-col md:flex-row">
         <h4>
           تاریخ :
-          <span class="text-gray-600">{{ props.order.createdAt }}</span>
+          <span class="text-gray-600 dark:text-gray-400">{{ props.order.createdAt }}</span>
         </h4>
         <h4>
           ساعت :
-          <span class="text-gray-600">{{ props.order.timeAt }}</span>
+          <span class="text-gray-600 dark:text-gray-400">{{ props.order.timeAt }}</span>
         </h4>
         <h4>
           کد سفارش :
-          <span class="text-gray-600">{{ props.order._id }}</span>
+          <span class="text-gray-600 dark:text-gray-400">{{ props.order._id }}</span>
         </h4>
         <h4>
           محصولات :
-          <span class="text-gray-600">{{ props.order.number }} عدد</span>
+          <span class="text-gray-600 dark:text-gray-400">{{ props.order.number }} عدد</span>
         </h4>
         <h4>
           مبلغ :
-          <span class="text-gray-600"
+          <span class="text-gray-600 dark:text-gray-400"
             >{{ props.order.price.toLocaleString() }} تومان</span
           >
         </h4>
         <h4>
           آدرس انتخاب شده :
-          <span class="text-gray-600">{{ selectedAddress.title }} </span>
+          <span class="text-gray-600 dark:text-gray-400">{{ selectedAddress.title }} </span>
         </h4>
       </div>
       <div class="mt-5">
