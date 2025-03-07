@@ -4,7 +4,7 @@
     <div class="flex justify-between items-center">
       <p class="my-2">{{ props.comment.text }}</p>
       <svg
-        v-if="userData.role == 'ADMIN'"
+        v-if="userData && userData.role == 'ADMIN'"
         xmlns="http://www.w3.org/2000/svg"
         width="2em"
         height="2em"
@@ -58,8 +58,6 @@ let { userData } = userAuth()
 let config = useRuntimeConfig()
 
 let props = defineProps(['comment', 'product'])
-
-// console.log(props.product)
 
 let toast = useToast()
 
