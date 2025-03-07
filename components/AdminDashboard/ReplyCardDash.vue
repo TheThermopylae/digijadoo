@@ -5,11 +5,11 @@
     <strong>مدیر</strong>
     <div>
       <p class="my-2">{{ props.reply.text }}</p>
-      <p class="mb-2">ریپلای شده بر روی : {{ props.comment.text }}</p>
-      <button class="btn-c" @click="approvReply" v-if="!loading">
+      <p class="mb-2 text-gray-600">ریپلای شده بر روی : {{ props.comment.text }}</p>
+      <button class="btn-c h-12" @click="approvReply" v-if="!loading">
         تایید ریپلای
       </button>
-      <button class="btn-c" v-else>
+      <button class="btn-c h-12" v-else>
         <LoadingSpinner class="w-5 h-5"></LoadingSpinner>
       </button>
     </div>

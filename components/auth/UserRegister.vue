@@ -1,8 +1,14 @@
 <template>
-  <div class="flex justify-center items-center h-screen flex-col bg-white-c">
+  <div class="flex justify-center items-center min-h-screen flex-col bg-white-c">
     <form class="w-full md:w-96 p-4 md:p-0" @submit.prevent="sendData">
       <div class="flex justify-center mb-3">
-        <img src="/public/logo.png" alt="logo" class="w-40 h-40 rounded-full" />
+        <NuxtLink to="/">
+          <img
+            src="/public/logo.png"
+            alt="logo"
+            class="w-40 h-40 rounded-full"
+          />
+        </NuxtLink>
       </div>
       <h1 class="text-3xl mb-5">عضویت</h1>
       <div>

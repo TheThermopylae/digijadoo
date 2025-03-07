@@ -83,7 +83,7 @@ async function addReply () {
         `${config.public.API_BASE_URL}/product/${props.product._id}/comment/${props.comment._id}/reply`,
         {
           method: 'POST',
-          body: { text: replyText.value,userid }
+          body: { text: replyText.value }
         }
       )
 

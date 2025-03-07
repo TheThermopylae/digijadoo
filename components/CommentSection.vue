@@ -19,8 +19,8 @@
           rows="5"
           v-model="commentText"
         ></textarea>
-        <button class="btn-c" v-if="!loading">افزودن نظر</button>
-        <button class="btn-c" v-else :disabled="loading">
+        <button class="btn-c h-12" v-if="!loading">افزودن نظر</button>
+        <button class="btn-c h-12" v-else :disabled="loading">
           <LoadingSpinner></LoadingSpinner>
         </button>
       </form>

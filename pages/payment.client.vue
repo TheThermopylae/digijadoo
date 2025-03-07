@@ -36,6 +36,10 @@
 <script setup>
 let { userData } = userAuth()
 
+definePageMeta({
+  middleware:'auth'
+})
+
 useHead({
   title: 'پرداخت'
 })
