@@ -356,7 +356,5 @@ const closeDrawer = () => {
 
 let config = useRuntimeConfig()
 
-let { data: categories } = await useFetch(
-  `${config.public.API_BASE_URL}/category`
-)
+let props = defineProps(['categories'])
 </script>

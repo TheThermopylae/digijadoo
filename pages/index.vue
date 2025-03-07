@@ -1,5 +1,6 @@
 <template>
-  <div class="lg:mt-10">
+  <div class="lgmt-10">
+    <HeroBanner />
     <CategorySlider>دسته بندی ها</CategorySlider>
     <ProductsSlider
       class="mt-5"
