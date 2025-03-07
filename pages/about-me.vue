@@ -23,3 +23,9 @@
     </p>
   </div>
 </template>
+
+<script setup>
+useHead({
+  title: 'درباره ما'
+})
+</script>
