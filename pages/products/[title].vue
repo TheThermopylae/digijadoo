@@ -2,7 +2,7 @@
   <div v-if="products" class="mt-20 lg:mt-10">
     <ProductDetail :data="findProduct"></ProductDetail>
     <DescriptionProduct :data="findProduct"></DescriptionProduct>
-    <!-- <TableAttrs :data="targetProduct"></TableAttrs> -->
+    <CommentSection :data="findProduct"></CommentSection>
     <div>
       <h2 class="title mb-2">محصولات مشابه</h2>
       <ProductsSlider
@@ -34,9 +34,6 @@ let route = useRoute()
 let findProduct = computed(() => {
   return products.value.find(product => product.title == route.params.title)
 })
-
-console.log(findProduct.value);
-
 
 let similarProducts = computed(() => {
   return products.value.filter(product => product.color !== findProduct.value.color && product.categoryid._id == findProduct.value.categoryid._id)

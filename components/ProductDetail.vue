@@ -23,6 +23,9 @@
           </li>
         </ul>
       </div>
+      <h1 class="text-2xl mt-5 lg:mt-0">
+        {{ props.data.title }}
+      </h1>
       <h4 class="my-3">
         دسته بندی :
         <nuxtLink
@@ -37,9 +40,6 @@
       <div>
         <h4 class="flex lg:justify-center mb-3 gap-2 items-center">رنگ : <div class="w-5 h-5 rounded-full border" :style="{background : props.data.color}"></div></h4>
       </div>
-      <h1 class="text-2xl mt-5 lg:mt-0">
-        {{ props.data.title }}
-      </h1>
       <ClientOnly>
         <LikeDislike :product="props.data"></LikeDislike>
       </ClientOnly>

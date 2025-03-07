@@ -1,99 +1,99 @@
 <template>
   <div>
-    <div v-if="editor" class="editor">
-      <button
+    <div v-if="editor" class="editor my-2">
+      <span
         @click="editor.chain().focus().toggleBold().run()"
         :disabled="!editor.can().chain().focus().toggleBold().run()"
         :class="{ 'is-active': editor.isActive('bold') }"
       >
         bold
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().toggleItalic().run()"
         :disabled="!editor.can().chain().focus().toggleItalic().run()"
         :class="{ 'is-active': editor.isActive('italic') }"
       >
         italic
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().toggleStrike().run()"
         :disabled="!editor.can().chain().focus().toggleStrike().run()"
         :class="{ 'is-active': editor.isActive('strike') }"
       >
         strike
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().setParagraph().run()"
         :class="{ 'is-active': editor.isActive('paragraph') }"
       >
         paragraph
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().toggleHeading({ level: 1 }).run()"
         :class="{ 'is-active': editor.isActive('heading', { level: 1 }) }"
       >
         h1
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().toggleHeading({ level: 2 }).run()"
         :class="{ 'is-active': editor.isActive('heading', { level: 2 }) }"
       >
         h2
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().toggleHeading({ level: 3 }).run()"
         :class="{ 'is-active': editor.isActive('heading', { level: 3 }) }"
       >
         h3
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().toggleHeading({ level: 4 }).run()"
         :class="{ 'is-active': editor.isActive('heading', { level: 4 }) }"
       >
         h4
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().toggleHeading({ level: 5 }).run()"
         :class="{ 'is-active': editor.isActive('heading', { level: 5 }) }"
       >
         h5
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().toggleHeading({ level: 6 }).run()"
         :class="{ 'is-active': editor.isActive('heading', { level: 6 }) }"
       >
         h6
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().toggleBulletList().run()"
         :class="{ 'is-active': editor.isActive('bulletList') }"
       >
         bullet list
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().toggleOrderedList().run()"
         :class="{ 'is-active': editor.isActive('orderedList') }"
       >
         ordered list
-      </button>
-      <button @click="editor.chain().focus().setHorizontalRule().run()">
+      </span>
+      <span @click="editor.chain().focus().setHorizontalRule().run()">
         horizontal rule
-      </button>
-      <button @click="editor.chain().focus().setHardBreak().run()">
+      </span>
+      <span @click="editor.chain().focus().setHardBreak().run()">
         hard break
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().undo().run()"
         :disabled="!editor.can().chain().focus().undo().run()"
       >
         undo
-      </button>
-      <button
+      </span>
+      <span
         @click="editor.chain().focus().redo().run()"
         :disabled="!editor.can().chain().focus().redo().run()"
       >
         redo
-      </button>
+      </span>
     </div>
     <TiptapEditorContent
       :editor="editor"
@@ -128,11 +128,12 @@ onUpdated(() => {
 </script>
 
 <style scoped>
-.editor button {
+.editor span {
   margin: 20px;
   transition: all 0.3s;
   padding: 3px 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .is-active {
   background: #8c00b6;

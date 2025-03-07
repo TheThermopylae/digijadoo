@@ -71,19 +71,19 @@
             class="block p-2 rounded-lg"
             @click="closeDrawer"
           >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="size-6"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          سفارشات
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 0 0 4.25 22.5h15.5a1.875 1.875 0 0 0 1.865-2.071l-1.263-12a1.875 1.875 0 0 0-1.865-1.679H16.5V6a4.5 4.5 0 1 0-9 0ZM12 3a3 3 0 0 0-3 3v.75h6V6a3 3 0 0 0-3-3Zm-3 8.25a3 3 0 1 0 6 0v-.75a.75.75 0 0 1 1.5 0v.75a4.5 4.5 0 1 1-9 0v-.75a.75.75 0 0 1 1.5 0v.75Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            سفارشات
           </NuxtLink>
         </li>
         <li class="mb-2">
@@ -107,7 +107,26 @@
             کاربران
           </NuxtLink>
         </li>
-        <li class="mb-2 border-gray-300">
+        <li class="mb-2">
+          <NuxtLink
+            to="/admin-panel/comments"
+            class="block p-2 rounded-lg transition-all hover:bg-purple-c hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 1792 1408"
+            >
+              <path
+                fill="currentColor"
+                d="M1408 512q0 139-94 257t-256.5 186.5T704 1024q-86 0-176-16q-124 88-278 128q-36 9-86 16h-3q-11 0-20.5-8t-11.5-21q-1-3-1-6.5t.5-6.5t2-6l2.5-5l3.5-5.5l4-5l4.5-5l4-4.5q5-6 23-25t26-29.5t22.5-29t25-38.5t20.5-44Q142 841 71 736T0 512q0-139 94-257T350.5 68.5T704 0t353.5 68.5T1314 255t94 257m384 256q0 120-71 224.5T1526 1169q10 24 20.5 44t25 38.5t22.5 29t26 29.5t23 25q1 1 4 4.5t4.5 5t4 5t3.5 5.5l2.5 5l2 6l.5 6.5l-1 6.5q-3 14-13 22t-22 7q-50-7-86-16q-154-40-278-128q-90 16-176 16q-271 0-472-132q58 4 88 4q161 0 309-45t264-129q125-92 192-212t67-254q0-77-23-152q129 71 204 178t75 230"
+              />
+            </svg>
+            نظرات
+          </NuxtLink>
+        </li>
+        <li class="mb-2">
           <NuxtLink
             @click="closeDrawer"
             to="/admin-panel/categories/"
@@ -148,7 +167,7 @@
             محصولات
           </NuxtLink>
         </li>
-        <li class="pb-2 border-gray-300">
+        <li class="pb-2">
           <NuxtLink
             @click="closeDrawer"
             to="/admin-panel/blog"
@@ -172,7 +191,7 @@
             بلاگ
           </NuxtLink>
         </li>
-        <li class="mb-2 border-gray-300">
+        <li class="mb-2">
           <NuxtLink
             @click="closeDrawer"
             to="/admin-panel/profile"

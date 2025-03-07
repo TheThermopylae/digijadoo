@@ -11,7 +11,7 @@
       <div v-if="slicedSearchProducts.length > 0">
         <p>محصولات یافت شده : {{ products.products.length }} محصول</p>
         <CategorySlider class="mt-7"></CategorySlider>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-5">
           <ProductCard
             v-for="item in slicedSearchProducts"
             :data="item"
