@@ -36,7 +36,7 @@
         aria-label="close sidebar"
         class="drawer-overlay"
       ></label>
-      <ul class="bg-base-200 text-base-content min-h-full w-80 p-4">
+      <ul class="bg-base-200 dark:bg-dark-s min-h-full w-80 p-4">
         <li>
           <svg
             @click="closeDrawer"

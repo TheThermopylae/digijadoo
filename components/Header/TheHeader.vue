@@ -95,7 +95,7 @@
             <NuxtLink
               v-else
               to="/auth/login"
-              class="w-12 h-12 bg-white-c rounded-full flex justify-center items-center hover:ring-2 ring-purple-c transition-all mr-3"
+              class="w-12 h-12 bg-white-c dark:bg-dark-c rounded-full flex justify-center items-center hover:ring-2 ring-purple-c transition-all mr-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -390,7 +390,6 @@ function searchHandler () {
     if (route.path == '/products') {
       router.push({
         path: route.path,
-        // query: {}
         query: { sort: 'newest' }
       })
     }

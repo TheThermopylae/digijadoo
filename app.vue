@@ -33,9 +33,13 @@ provide('setDarkMode', setDarkMode)
 provide('unSetDarkMode', unSetDarkMode)
 
 function checkDarkModeOn () {
-  if (localStorage.getItem('darkmode') == true)
+  if (localStorage.getItem('darkmode') == true) {
     document.querySelector('html').classList.add('dark')
-  else document.querySelector('html').classList.remove('dark')
+    document.body.classList.add('bg-dark')
+  } else {
+    document.querySelector('html').classList.remove('dark')
+    document.body.classList.remove('bg-dark')
+  }
 
   darkmode.value = JSON.parse(localStorage.getItem('darkmode'))
 }
@@ -44,9 +48,11 @@ watch(darkmode, () => {
   if (darkmode.value) {
     document.querySelector('html').classList.add('dark')
     localStorage.setItem('darkmode', true)
+    document.body.classList.add('bg-dark-c')
   } else {
     document.querySelector('html').classList.remove('dark')
     localStorage.setItem('darkmode', false)
+    document.body.classList.remove('bg-dark-c')
   }
 })
 

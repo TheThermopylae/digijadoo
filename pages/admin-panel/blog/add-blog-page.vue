@@ -112,7 +112,11 @@
         </svg>
         افزودن بلاگ
       </button>
-      <button class="btn-c mt-5 w-36 flex justify-center" v-else>
+      <button
+        class="btn-c mt-5 w-36 flex justify-center"
+        v-else
+        :disabled="loading"
+      >
         <LoadingSpinner></LoadingSpinner>
       </button>
     </form>

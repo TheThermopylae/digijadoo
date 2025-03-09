@@ -69,7 +69,7 @@
         </svg>
         افزودن دسته بندی
       </button>
-      <button class="btn-c h-12 w-42 flex gap-2 items-center" v-else="!loading">
+      <button class="btn-c h-12 w-42 flex gap-2 items-center" v-else="!loading" :disabled="loading">
         <LoadingSpinner></LoadingSpinner>
       </button>
     </form>

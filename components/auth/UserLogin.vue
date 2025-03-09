@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center h-screen flex-col bg-white-c dark:bg-dark-s dark:text-text-dark">
+  <div class="flex justify-center items-center h-screen flex-col bg-white-c dark:bg-dark-c dark:text-text-dark">
     <form class="w-full md:w-96 p-4 md:p-0" @submit.prevent="sendData">
       <div class="flex justify-center mb-3">
         <NuxtLink to="/">

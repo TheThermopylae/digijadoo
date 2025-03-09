@@ -65,6 +65,7 @@
       <button
         class="btn-c h-12 w-42 flex gap-2 items-center justify-center"
         v-else="!loading"
+        :disabled="loading"
       >
         <LoadingSpinner></LoadingSpinner>
       </button>

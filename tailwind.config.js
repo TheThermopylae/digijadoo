@@ -22,7 +22,7 @@ export default {
         'white-c': '#F0F0F0',
         'purple-c': '#8c00b6',
         'dark-c': '#171717',
-        'dark-s': '#1E1E1E',
+        'dark-s': '#262626',
         'text-dark': '#EEE',
         'b-dark': '#303030'
       }

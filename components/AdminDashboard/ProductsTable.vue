@@ -7,7 +7,7 @@
       <table class="table">
         <!-- head -->
         <thead>
-          <tr class="dark:border-b-dark">
+          <tr class="dark:border-b-dark dark:text-text-dark">
             <th class="p-0">
               <td class="mr-2">نام</td>
             </th>

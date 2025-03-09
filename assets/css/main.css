@@ -23,11 +23,11 @@ body {
 }
 
 select {
-  @apply outline-none cursor-pointer border bg-white dark:bg-dark-c dark:border-[#303030]
+  @apply outline-none cursor-pointer border bg-white dark:bg-dark-s dark:border-[#303030]
 }
 
 input {
-  @apply border outline-none rounded-lg bg-white dark:bg-dark-c dark:border-[#303030]
+  @apply border outline-none rounded-lg bg-white dark:bg-dark-s dark:border-[#303030]
 }
 
 .cinput {

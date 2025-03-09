@@ -122,6 +122,7 @@
         <button
           v-else
           class="btn-c px-4 py-3 h-12 w-36 flex items-center justify-center"
+          :disabled="loading"
         >
           <LoadingSpinner></LoadingSpinner>
         </button>

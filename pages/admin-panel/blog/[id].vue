@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1 class="text-3xl">ویرایش بلاگ {{ blog.blog.title }}</h1>
-    <p class="text-gray-600 my-4">وبلاگ خود را ویرایش کنید و آن را اضافه کنید</p>
+    <p class="text-gray-600 my-4">
+      وبلاگ خود را ویرایش کنید و آن را اضافه کنید
+    </p>
     <form @submit.prevent="">
       <div class="grid grid-cols-2 gap-5">
         <div>
@@ -109,7 +111,11 @@
         </svg>
         ویرایش بلاگ
       </button>
-      <button class="btn-c mt-5 w-36 flex justify-center" v-else>
+      <button
+        class="btn-c mt-5 w-36 flex justify-center"
+        v-else
+        :disabled="loading"
+      >
         <LoadingSpinner></LoadingSpinner>
       </button>
     </form>
@@ -130,8 +136,6 @@ let { data: blog } = await useAsyncData(() =>
     body: { id: route.params.id }
   })
 )
-
-// console.log(blog.value)
 
 let blogData = reactive({
   title: blog.value.blog.title,

@@ -109,6 +109,7 @@
         </li>
         <li class="mb-2">
           <NuxtLink
+            @click="closeDrawer"
             to="/admin-panel/comments"
             class="block p-2 rounded-lg transition-all hover:bg-purple-c hover:text-white"
           >
