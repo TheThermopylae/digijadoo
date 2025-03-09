@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-    <div v-else class="text-gray-600 text-center text-lg">سبد خرید شما خالی است!</div>
+    <div v-else class="text-gray-600 text-center text-lg dark:text-text-dark">سبد خرید شما خالی است!</div>
   </div>
 </template>
 

@@ -1,5 +1,7 @@
 <template>
-  <div class="flex justify-center items-center h-screen text-center">
+  <div
+    class="flex justify-center items-center h-screen text-center"
+  >
     <div v-if="error.statusCode == 404">
       <span class="text-9xl text-gray-400">404</span>
       <p class="mt-5 mb-8 text-purple-c text-xl">صفحه ی مورد نظر پیدا نشد!</p>
@@ -22,6 +24,8 @@ let error = useError()
 
 useHead({
   title:
-    error.value.statusCode === 404 ? 'صفحه ی مورد نظر پیدا نشد' : 'مشکلی پیش آمده است'
+    error.value.statusCode === 404
+      ? 'صفحه ی مورد نظر پیدا نشد'
+      : 'مشکلی پیش آمده است'
 })
 </script>

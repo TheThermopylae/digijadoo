@@ -11,7 +11,7 @@
       ></BasketTableCart>
       <BasketNextStep :data="products"></BasketNextStep>
     </div>
-    <p v-else class="text-center text-gray-600 mt-5 text-xl">
+    <p v-else class="text-center text-gray-600 mt-5 text-xl dark:text-text-dark">
       سبد خرید شما خالی است!
     </p>
     <Transition>
