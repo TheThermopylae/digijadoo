@@ -68,7 +68,7 @@
     <Transition>
       <div
         v-if="filterPending || searchPending"
-        class="fixed bg-white dark:bg-dark z-10 w-full h-full top-0 right-0 flex justify-center items-center"
+        class="fixed bg-white dark:bg-dark-c z-10 w-full h-full top-0 right-0 flex justify-center items-center"
       >
         <LoadingSpinner class="w-16 h-16 text-purple-c text-center" />
       </div>
