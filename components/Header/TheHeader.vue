@@ -91,7 +91,6 @@
               </div>
             </NuxtLink>
             <HeaderDropDown v-if="userData"></HeaderDropDown>
-
             <NuxtLink
               v-else
               to="/auth/login"
@@ -352,7 +351,7 @@
           <NuxtLink @click="closeDrawer" to="/products">فروشگاه</NuxtLink>
         </li>
         <li class="pr-6 mt-6">
-          <NuxtLink @click="closeDrawer" to="/products">بلاگ</NuxtLink>
+          <NuxtLink @click="closeDrawer" to="/blogs">بلاگ</NuxtLink>
         </li>
         <li class="pr-6 mt-6">
           <NuxtLink @click="closeDrawer" to="/contact-me"
