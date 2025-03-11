@@ -7,6 +7,7 @@
       <h2 class="title mb-2">محصولات مشابه</h2>
       <ProductsSlider
         :data="similarProducts"
+        :pagination="false"
         v-if="similarProducts.length > 0"
       ></ProductsSlider>
       <p class="text-center text-xl" v-else>محصولی یافت نشد!</p>
@@ -30,13 +31,16 @@ provide('refresh', refresh)
 
 let route = useRoute()
 
-
 let findProduct = computed(() => {
   return products.value.find(product => product.title == route.params.title)
 })
 
 let similarProducts = computed(() => {
-  return products.value.filter(product => product.color !== findProduct.value.color && product.categoryid._id == findProduct.value.categoryid._id)
+  return products.value.filter(
+    product =>
+      product.color !== findProduct.value.color &&
+      product.categoryid._id == findProduct.value.categoryid._id
+  )
 })
 useHead({
   title: findProduct.value.title

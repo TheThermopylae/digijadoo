@@ -18,7 +18,7 @@
       :pagination="{
         clickable: true
       }"
-      :modules="modules"
+      :modules="!pagination ? [] : modules"
       class="mySwiper"
     >
       <swiper-slide v-for="(item, index) in data" :key="index">
@@ -40,7 +40,7 @@ export default {
     Swiper,
     SwiperSlide
   },
-  props: ['data'],
+  props: ['data', 'pagination'],
   setup () {
     return {
       modules: [Pagination]

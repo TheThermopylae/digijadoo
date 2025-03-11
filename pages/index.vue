@@ -5,6 +5,7 @@
     <ProductsSlider
       class="mt-5"
       :data="products.slice(0, 8).reverse()"
+      :pagination="true"
       v-if="products"
     >
       <template #title>
@@ -16,7 +17,12 @@
         >
       </template>
     </ProductsSlider>
-    <ProductsSlider class="mt-5" :data="products.slice(0, 8)" v-if="products">
+    <ProductsSlider
+      :pagination="true"
+      class="mt-5"
+      :data="products.slice(0, 8)"
+      v-if="products"
+    >
       <template #title>
         <h3>جدید ترین ها</h3>
       </template>
@@ -28,7 +34,7 @@
         >
       </template>
     </ProductsSlider>
-    <BlogSlider :blogs="blogs" v-if="blogs" />
+    <BlogSlider :pagination="true" :blogs="blogs.slice(0, 10)" v-if="blogs" />
   </div>
 </template>
 
