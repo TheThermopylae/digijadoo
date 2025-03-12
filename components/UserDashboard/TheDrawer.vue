@@ -1,5 +1,5 @@
 <template>
-  <div class="drawer z-[1] container m-auto p-5">
+  <div class="drawer z-[1] container m-auto">
     <input
       id="my-drawer"
       type="checkbox"
